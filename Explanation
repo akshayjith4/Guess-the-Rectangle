@@ -1,0 +1,15 @@
+The code begins by importing necessary modules: turtle for graphics and randint from random for generating random integers.
+
+The Point class represents a point in 2D space with (x, y) coordinates. It has an __init__() method to initialize the point and a falls_in_rectangle() method to check if the point falls within a given rectangle.
+
+Similarly, the Rectangle class represents a rectangle defined by two corner points. It has an __init__() method to initialize the rectangle and an area() method to calculate its area.
+
+The play_game() function encapsulates the game logic. It generates a random rectangle object with random corner points within specified ranges. Then, it prompts the user to input guesses for the coordinates of a point within the rectangle (user_point) and the area of the rectangle (user_area).
+
+After receiving user input, the function prints the coordinates of the randomly generated rectangle and checks if the user's guessed point falls within the rectangle. It also calculates the difference between the user's area guess and the actual area of the rectangle, printing the results.
+
+Using turtle graphics, the function draws the randomly generated rectangle and the user's guessed point on a graphics window. It creates a turtle screen, adjusts its dimensions to fit the rectangle, and uses a turtle object to draw the rectangle and user's point.
+
+Finally, the play_game() function is called to start the game.
+
+This code combines object-oriented programming principles with user interaction and visualization using turtle graphics to create an interactive "Guess the Rectangle" game.
